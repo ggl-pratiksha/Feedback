@@ -1,0 +1,32 @@
+html
+    head
+        title my jade template
+        script(type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
+        script(type='text/javascript' src = '/assets/javascripts/addFeedback.js')
+    body
+        form(id="addForm" method="POST"  action="")
+            |    Name:
+            input(type="text" name="by" id="by")
+            br
+            |    Email:
+            input(type="email" name="email" id="email")
+            br
+            |    Topic:
+            input(type="text" name="topic" id="topic")
+            br
+            |    Rating:
+            input(type="text" name="rating" id="rating")
+            br
+            |    Comment:
+            input(type="text" name="comment" id="comment")
+            br
+            br
+            h3#response
+            br
+            br
+            input(type='button' value='ADD' id="addButton")
+            br
+            input(type='button' value='Back to main page' id="backButton")
+
+
+

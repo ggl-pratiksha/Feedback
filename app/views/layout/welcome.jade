@@ -1,0 +1,16 @@
+html
+	head
+		title my jade template
+		script(type='text/javascript' src = '/assets/javascripts/addFeedback.js')
+	body
+		input(type='button' value='Add' id="renderAddButton")
+		br
+		br
+		form(id="searchButtonForm" method="GET"  action="/searchRenderer")
+			input(type='submit' value='Search')
+		form(id="deleteButtonForm" method="GET"  action="/deleteRenderer")
+			input(type='submit' value='Delete')
+		form(id="updateButtonForm" method="GET"  action="/updateRenderer")
+			input(type='submit' value='Update')
+		form(id="viewButtonForm" method="GET"  action="/veiwDB")
+			input(type='submit' value='View Data')

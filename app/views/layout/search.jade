@@ -1,0 +1,22 @@
+html
+	head
+		title my jade template
+		script(type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
+		script(type='text/javascript' src = '/assets/javascripts/searchFeedback.js')
+	body
+		form(id="searchForm" method="POST" action="")
+			select(name='mydropdown')
+				option(value='by') By
+				option(value='topic') Topic
+				option(value='comment') Comment
+				option(value='date') Date before
+				option(value='fullText') Full text search
+			input(type="text" name="input")
+			br
+			br
+			input(type='button' value='Search' id='searchButton')
+			br
+			input(type='button' value='Back to main page' id='backButton')
+			br
+			h3#response
+			

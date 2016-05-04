@@ -1,0 +1,4 @@
+[0m[[31merror[0m] [0m/Users/pgn3317/codebase/act/app/assets/javascripts/searchFeedback.coffee:31: unexpected indentation[0m
+[0m[[31merror[0m] [0m			console.log("response data : ")[0m
+[0m[[31merror[0m] [0m^[0m
+[0m[[31merror[0m] [0mone error found[0m

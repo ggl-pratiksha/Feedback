@@ -1,0 +1,17 @@
+html
+    head
+        title my jade template
+    body
+        form(id="deleteForm" method="POST"  action="/delete")
+            select(name='mydropdown')
+                option(value='by') By
+                option(value='comment') Comment
+                option(value='date') Date before
+                option(value='fullText') Full text search
+            input(type="text" name="input")
+            br
+            br
+            input(type='submit' value='Delete')(style='margin-right:100px')
+
+        form(id="back" method="GET" action="/")
+            input(type='submit' value='Back to main page')

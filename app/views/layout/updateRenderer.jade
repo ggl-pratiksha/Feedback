@@ -1,0 +1,21 @@
+html
+    head
+        title my jade template
+    body
+        form(id="updateForm" method="POST"  action="/update")
+            select(name='mydropdown')
+                option(value='by') By
+                option(value='topic') Topic
+                option(value='comment') Comment
+                option(value='date') Date before
+                option(value='fullText') Full text search
+            |    Old value :
+            input(type="text" name="oldValue")
+            |   New value :
+            input(type="text" name="newValue")
+            br
+            br
+            input(type='submit' value='Update')
+
+        form(id="back" method="GET" action="/")
+            input(type='submit' value='Back to main page')
