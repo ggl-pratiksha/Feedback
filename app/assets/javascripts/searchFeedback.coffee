@@ -34,7 +34,8 @@ window.searchFeedback = class SearchFeedback
 			console.log(responseData)
 			searchResult = responseData
 			console.log("search result : ", searchResult)
-			$("#response").text(searchResult.result[0])
+			JSON.stringify(responseData)
+			$("#response").text(JSON.stringify(responseData))
 
 	@backToMainPage: =>
 			location.href = '/'
